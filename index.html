@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Tip calculator app</title>
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <header>
+    <img src="./images/logo.svg" alt="">
+  </header>
+
+  <div class="general-wrapper">
+
+    <div class="data-wrapper">
+      
+      <h1>Bill</h1>
+        <label for="input-bill">
+            <input class="input-bill" id="input-bill" type="number" value="0" min="0">
+        </label>
+
+      <h2>Select Tip %</h2>
+      <ul>
+        <li id="percentage-5"><button type="button" class="percentage-button" value="5">5%</button></li>
+        <li id="percentage-10"><button type="button" class="percentage-button" value="10">10%</button></li>
+        <li id="percentage-15"><button type="button" class="percentage-button" value="15">15%</button></li>
+        <li id="percentage-25"><button type="button" class="percentage-button" value="25">25%</button></li>
+        <li id="percentage-50"><button type="button" class="percentage-button" value="50">50%</button></li>
+        <li><input type="number" placeholder="Custom" id="custom-percentage-button" class="percentage-button"></li> <!-- posso apagar percentage button-->
+      </ul>
+
+      <h2>Number of People</h2>
+        <div class="input-container"> 
+        <label for="input-people">
+          <input id="input-people" class="input-people" type="number" value="1" min="1"> <!--puedo colocar en class = "input-invalid" quando es menor que cero-->
+        </label>
+        <span id="people-error" class="error-message">Can't be zero</span> <!--Aqui colocamos el span que podrá ser visto o no-->
+      </div>
+    </div>
+
+    <div class="result-wrapper">
+      <div class="result-txt">
+
+        <div class="text-amount">
+          <div>
+            <h2>Tip Amount</h2>
+            <p>/ person</p>
+          </div>
+          <h3>$<span id="tip-amount">0</span></h3>
+        </div>
+
+        <div class="total-amount">
+          <div>
+            <h2>Total</h2>
+            <p>/ person</p>
+          </div>
+          <h3>$<span id="total">0</span></h3>
+        </div>
+
+      </div>
+      
+      <button type="button" id="reset-button" class="reset-button">RESET</button> <!--onclick="resett()" pode ser usado também-->
+
+    </div>
+
+  </div>
+  
+</body>
+
+</html>
