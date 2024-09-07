@@ -1,6 +1,8 @@
 # Calculadora de Gorjeta
+![designDesktop](/public/designDesktop.png)
+![designMobile](/public/designMobile.png)
 
-Uma aplicação simples para calcular a gorjeta em um jantar e dividir a conta entre o número de pessoas.
+Uma aplicação simples para calcular a gorjeta em um jantar e dividir a conta entre o número de pessoas. Design extraído de **[Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)**
 
 ## Funcionalidades
 
@@ -14,6 +16,7 @@ Uma aplicação simples para calcular a gorjeta em um jantar e dividir a conta e
 - HTML
 - CSS
 - JavaScript
+- Frontend Mentor
 
 ## Uso
 
